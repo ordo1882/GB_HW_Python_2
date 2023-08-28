@@ -18,4 +18,4 @@ for i in range(coins):
     else:
         tail += 1
 
-print(f"\nNeed to flip {head} coins") if head < tail else print(f"Need to flip {tail} coins")
+print(f"\nNeed to flip {head} coins" if head < tail else f"\nNeed to flip {tail} coins")

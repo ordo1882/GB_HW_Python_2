@@ -3,11 +3,14 @@
 n = int(input("Enter the number: "))
 
 count = 1
+condition = True
 
 print("Power of 2 numbers line: ")
 
-while count < n:
+while condition:
     count *= 2
+    
     if count > n:
-        break
-    print(count, end= ' ')
+        condition = False
+    else:
+        print(count, end= ' ')
